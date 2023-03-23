@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+
+  <script src="https://kit.fontawesome.com/59967f5f13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>SoftWare Developer</p>
+        <h1>Hi, I'm <span>Prajjwal</span></h1>
+      </div>
+    </div>
+  </div>
+
+<!-- About Section  -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Seeking a beginner role to enhance and explore my 
+            technical knowledge gained at RGPV University in the 
+            last two years. I hold a MCA degree from Acropolis 
+            Indore college.</p>
+         
+          <div class="tab-titles">
+          <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Java</span><br></li>
+              <li><span>C/CPP</span><br></li>
+              <li><span>JavaScript</span><br></li>
+              <li><span>MySQL</span><br></li>
+              <li><span>Git</span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Java</span><br></li>
+              <li><span>C/CPP</span><br></li>
+              <li><span>JavaScript</span><br></li>
+              <li><span>MySQL</span><br></li>
+              <li><span>Git</span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022</span><br>Master In Computer Application</li>
+              <li><span>2020</span><br>Bca</li>
+              <li><span>2016</span><br>higher secondary education from CBSE</li>
+              <li><span>2014</span><br>secondary education CBSE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-sharp fa-solid fa-spinner fa-fade"></i>
+          <h2>Comming Soon</h2>
+          <p></p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-spinner fa-fade"></i>
+          <h2>Comming Soon</h2>
+          <p></p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-spinner fa-fade"></i>
+          <h2>Comming Soon</h2>
+          <p></p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- <script>    </script> -->
+  <script src="app.js"></script>
+</body>
+</html>
