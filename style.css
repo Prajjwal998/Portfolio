@@ -16,7 +16,7 @@ body{
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.png);
+  background-image: url(images/background0.png);
   background-size: cover;
   background-position: center; 
 }
@@ -287,6 +287,25 @@ nav ul li a:hover::after
 .btn:hover{
   background: #379ece;
 }
+
+/* ----------------See more--------------- */
+
+.btn-back{
+  display: inline-block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #379ece;
+  padding: 14px 50px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+
+.btn-back:hover{
+  background: #379ece;
+}
+
 
 /* ----------------contact--------------- */
 

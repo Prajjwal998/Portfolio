@@ -18,7 +18,7 @@
         <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -37,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/user.png" alt="">
+          <img src="images/profile.png" alt="">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
@@ -48,27 +48,18 @@
          
           <div class="tab-titles">
           <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
           </div>
           
           <div class="tab-contents active-tab" id="skills">
             <ul>
               <li><span>Java</span><br></li>
-              <li><span>C/CPP</span><br></li>
               <li><span>JavaScript</span><br></li>
               <li><span>MySQL</span><br></li>
-              <li><span>Git</span><br></li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>Fresher</span><br></li>
-              <li><span>Java</span><br></li>
               <li><span>C/CPP</span><br></li>
-              <li><span>JavaScript</span><br></li>
-              <li><span>MySQL</span><br></li>
+              <li><span>HTML</span><br></li>
+              <li><span>CSS</span><br></li>
               <li><span>Git</span><br></li>
             </ul>
           </div>
@@ -76,11 +67,23 @@
           <div class="tab-contents" id="education">
             <ul>
               <li><span>2022</span><br>Master In Computer Application</li>
-              <li><span>2020</span><br>Bca</li>
-              <li><span>2016</span><br>higher secondary education from CBSE</li>
-              <li><span>2014</span><br>secondary education CBSE</li>
+              <li><span>2020</span><br>BCA</li>
+              <li><span>2016</span><br>Higher Secondary Education from CBSE</li>
+              <li><span>2014</span><br>Secondary Education CBSE</li>
             </ul>
           </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Fresher</span><br></li>
+              <!-- <li><span>Java</span><br></li>
+              <li><span>C/CPP</span><br></li>
+              <li><span>JavaScript</span><br></li>
+              <li><span>MySQL</span><br></li>
+              <li><span>Git</span><br></li> -->
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
@@ -88,7 +91,7 @@
 
   <!-- Services -->
 
-  <div id="services">
+  <!-- <div id="services">
     <div class="container">
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
@@ -112,41 +115,40 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
-<!-- portfolio -->
+  <!-- portfolio -->
   <div id="portfolio">
     <div class="container">
-      <h1 class="sub-title">My  Work</h1>
+      <h1 class="sub-title">My Projects</h1>
       <div class="work-list">
         <div class="work">
-          <img src="images/work-1.png" alt="">
+          <img src="images/imageEditor.jpeg" alt="">
           <div class="layer">
-            <h3>Youtube Home Page</h3>
-            <p>Clone of youtube home page.
-              on click it redirect you to youtube.
+            <h3>Image Editor</h3>
+            <p>Simple Image editor to edit images eg brightness crop etc.
             </p>
             <!-- <a href="#"></a> -->
-            <a href="https://youtube-homepage-prajjwal.netlify.app">
+            <a href="https://image-editor-simple.netlify.app">
               <i class="fa-sharp fa-solid fa-up-right-from-square" style="color: #1f5151;"></i>
             </a>
           </div>
         </div>
         <div class="work">
-          <img src="images/work-2.png" alt="">
+          <img src="images/tipcalc.png" alt="">
           <div class="layer">
-            <h3>Youtube Home Page</h3>
-            <p>Clone of youtube home page.
-              on click it redirect you to youtube.
+            <h3>Tip Calculator</h3>
+            <p>Calculate tip on the basis of 
+              service and behaivour.
             </p>
             <!-- <a href="#"></a> -->
-            <a href="https://youtube-homepage-prajjwal.netlify.app">
+            <a href="service-tip-calculator.netlify.app">
               <i class="fa-sharp fa-solid fa-up-right-from-square" style="color: #1f5151;"></i>
             </a>
           </div>
         </div>
         <div class="work">
-          <img src="images/work-3.png" alt="">
+          <img src="images/ytclone.jpg" alt="">
           <div class="layer">
             <h3>Youtube Home Page</h3>
             <p>Clone of youtube home page.
@@ -159,7 +161,7 @@
           </div>
         </div>
       </div>
-      <a href="#" class="btn">See More</a>
+      <a href="myProjects.html" class="btn">See More</a>
     </div>
   </div>
 
