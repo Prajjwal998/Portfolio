@@ -34,6 +34,7 @@ body{
 
 .sub-title{
   text-align: center;
+  
 }
 
 #portfolio{
@@ -106,4 +107,40 @@ body{
 
 .work:hover .layer{
   height: 100%;
+}
+
+/* service comming soon  */
+.fa-sharp{
+margin-top: 10px;
+margin-left: 40%;
+}
+
+.services-list{
+  display: grid;
+}
+
+.services-list div{
+  background: #6d6d6d;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s ;
+}
+
+.services-list div h2{
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.services-list div a{
+  text-decoration: none;
+  color: #fff ;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list div:hover{
+  background: #379ece;
+  transform: translate(10px);
 }
