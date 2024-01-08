@@ -28,7 +28,7 @@ pipeline {
 	{
 		steps{
 			sh '''
-				docker build -t prajjwal .
+				docker build -t prajjwal ./docker-file
 				echo "list images"
 				docker images
 			'''
