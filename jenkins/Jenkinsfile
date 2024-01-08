@@ -5,6 +5,8 @@ pipeline {
 		{
 			steps{
 				sh '''
+					echo "clean old directory"
+     					rm -rf /var/lib/jenkins/workspace/Portfolio
 					echo "creating directory"
 					mkdir my_portfolio
 					cd my_portfolio
