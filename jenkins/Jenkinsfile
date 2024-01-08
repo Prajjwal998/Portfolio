@@ -1,0 +1,35 @@
+pipeline {
+    agent none
+    stages {
+        stage('create directory and move in') {
+            sh '''
+			echo "creating directory"
+			mkdir my_portfolio
+			cd my_portfolio
+	'''
+			}
+	stage('clone repo')
+	{
+			sh '''
+			git clone https://github.com/Prajjwal998/Portfolio.git
+			cd Portfolio
+			ls
+			'''
+	}
+	stage('execute dockerfile')
+	{
+			sh '''
+			docker build -t prajjwal ./docker-file/Dockerfile
+			echo "list images"
+			docker images
+			'''
+	}
+	stage('map port 80')
+		{
+			sh '''
+			docker run -itd -p 80:80 --name web prajjwal
+			'''
+		}
+
+	}
+}
