@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-	    stage('Delete existing container and dir') 
-		{
-			steps{
-    				build job: 'delete-container', wait:true
-			}	
-		}
+	 //    stage('Delete existing container and dir') 
+		// {
+		// 	steps{
+  //   				build job: 'delete-container', wait:true
+		// 	}	
+		// }
         stage('create directory and move in') 
 		{
 			steps{
