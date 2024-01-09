@@ -5,6 +5,7 @@ pipeline {
 		{
 			steps{
 				sh '''
+    					pwd
 					echo "creating directory"
 					mkdir my_portfolio
 					cd my_portfolio
