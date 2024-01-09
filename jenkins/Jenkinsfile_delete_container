@@ -9,7 +9,7 @@ node {
 			}
         catch (exc) 
 		{
-            echo 'Something failed, I should sound the klaxons!'
+            echo 'nothing to do!'
         }
     }
 	stage('remove container') {
