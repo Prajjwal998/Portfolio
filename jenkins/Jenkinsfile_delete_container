@@ -4,7 +4,8 @@ node {
         try {
 			echo 'clean '
 			sh '''
-			rm -rf /var/lib/jenkins/workspace/jenkins_web-cicd
+			rm -rf /var/lib/jenkins/workspace/jenkins_web-cicd/my_portfolio
+			rm -rf /var/lib/jenkins/workspace/jenkins_web-cicd/Portfolio
 			'''       
 			}
         catch (exc) 
