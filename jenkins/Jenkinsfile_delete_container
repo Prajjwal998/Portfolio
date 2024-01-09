@@ -10,13 +10,19 @@ pipeline {
                 '''
             }
         }
-        stage('remove docker container') {
-            steps {
-                echo 'container delete'
-                sh '''
-                docker ps -aq | xargs docker stop | xargs docker rm
-                '''
+        try{
+            stage('remove docker container') {
+                steps {
+                    echo 'container delete'
+                    sh '''
+                    docker ps -aq | xargs docker stop | xargs docker rm
+                    '''
+                }
             }
+        } catch(e)
+        {
+            echo "do nothing"
         }
+
     }
 }
