@@ -1,28 +1,27 @@
-pipeline {
-    agent any
 
-    stages {
-        stage('remove directory from workspace') {
-            steps {
-                echo 'clean '
-                sh '''
-                rm -rf /var/lib/jenkins/workspace/jenkins_web-cicd
-                '''
-            }
+node {
+    stage('remove dir') {
+        try {
+			echo 'clean '
+			sh '''
+			rm -rf /var/lib/jenkins/workspace/jenkins_web-cicd
+			'''       
+			}
+        catch (exc) 
+		{
+            echo 'Something failed, I should sound the klaxons!'
         }
-        stage('remove docker container') {
-        try{
-            steps {
-                    echo 'container delete'
-                    sh '''
-                    docker ps -aq | xargs docker stop | xargs docker rm
-                    '''
-                }
-        } catch(e)
-        {
-            echo "do nothing"
+    }
+	stage('remove container') {
+        try {
+			echo 'container remove '
+			sh '''
+			docker ps -aq | xargs docker stop | xargs docker rm
+			'''       
+			}
+        catch (exc) 
+		{
+            echo 'nothing to do!'
         }
-        } 
-
     }
 }
