@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: portfolio-pod
+spec:
+  containers:
+  - name: portfolio-app
+    image: prajjwal998/portfoliok8s:latest
+    ports:
+    - containerPort: 80
