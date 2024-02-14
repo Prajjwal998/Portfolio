@@ -15,3 +15,4 @@ paste your ip url
 curl -L give-name.com:port(eg. 30007)
 
 kubectl expose deployment deployment-name --type=NodePort
+kubectl port-forward svc/portfolio-service 8080:80 --address 0.0.0.0 &
