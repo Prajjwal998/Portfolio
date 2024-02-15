@@ -1,0 +1,24 @@
+minikube start/delete
+minikube status
+minikube dashboard
+
+OUR FIRST DEPLOYMENT
+kubectl create deployment <deployment-name> --image=<image-name:latest>
+kubectl get deployments
+kubectl get pods
+kubectl logs <pod-name>
+kubectl describe pods
+kubectl delete deployment <deployment-name>
+  
+
+We will expose the project so that we can access it. Just like we used to bind ports 
+in the case of Docker, we will do the same here so that the project can be accessed using the service.
+
+kubectl expose deployment <deployment-name> --port=80 --type=LoadBalancer/NodePort
+to check kubectl get service
+
+Now that we've created the service, we still can't access it. We need to inform Minikube first, then it will 
+provide us with the URL to access it.
+minikube  service <service-name>
+now you get a url on which your project is running
+
