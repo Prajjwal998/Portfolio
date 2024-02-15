@@ -1,0 +1,20 @@
+install docker, minikube, kubectl, git
+clone repo
+cd Kubernetes
+kubectl apply -f filename.yaml
+eg: kubectl apply -f deployment.yaml
+kubectl get svc
+
+to get url 
+minikube service service-name --url (find service name in service.yaml file)
+To check if the above URL is working
+curl -L your-url
+if code is visible in the output that means all ok 
+
+To give the name to our URL, edit
+sudo vim /etc/hosts
+and paste your ip URL
+192.0.0.0. give-name.com
+curl -L give-name.com:port(eg. 30007)
+kubectl expose deployment deployment-name --type=NodePort
+kubectl port-forward svc/portfolio-service 8080:80 --address 0.0.0.0 &
