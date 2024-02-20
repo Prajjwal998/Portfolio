@@ -9,16 +9,41 @@ kubectl get pods
 kubectl logs <pod-name>
 kubectl describe pods
 kubectl delete deployment <deployment-name>
-  
+kubectl delete -f deployment <deployment-name>  
 
 We will expose the project so that we can access it. Just like we used to bind ports 
 in the case of Docker, we will do the same here so that the project can be accessed using the service.
 
 kubectl expose deployment <deployment-name> --port=80 --type=LoadBalancer/NodePort
-to check kubectl get service
+to check 
+kubectl get service
 
 Now that we've created the service, we still can't access it. We need to inform Minikube first, then it will 
 provide us with the URL to access it.
+minikube  service <service-name>
+now you get a url on which your project is running
+
+If we want to update our project, for example, if I make changes to my project and create a new image version, 
+we need to know how to do this in pods.
+
+kubectl set image deployment <deployment-name> <container-name>=<image-name>
+(you can find container name in minikube dashboard)
+
+ROLL OUT
+kubectl rollout status <deploymrnt-name>
+
+ROLLBACK 
+kubectl rollout undo deployment <deployment-name>
+
+SCALING
+kubectl scale deployment <deployment-name> --replicas=3
+
+NOW WE DO ABOVE WITH YAML FILE
+CREATE A DEPLOYMENT.YAML FILE TAKE REFERENE FROM k8s.IO
+kubectl apply -f <file-name.yaml>
+DO SAME WITH SERVICE.YAML
+AND
+kubectl get service
 minikube  service <service-name>
 now you get a url on which your project is running
 
