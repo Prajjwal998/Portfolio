@@ -4,8 +4,8 @@ node {
         try {
 			echo 'clean '
 			sh '''
-			rm -rf /var/lib/jenkins/workspace/<YOUR PIPELINE NAME>/my_portfolio
-			rm -rf /var/lib/jenkins/workspace/<YOUR PIPELINE NAME>/Portfolio
+			rm -rf /var/lib/jenkins/workspace/Portfolio-ci-cd/my_portfolio
+			rm -rf /var/lib/jenkins/workspace/Portfolio-ci-cd/Portfolio
 			'''       
 			}
         catch (exc) 
