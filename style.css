@@ -217,6 +217,32 @@ nav i{
   width: 100%;
 }
 
+.tab-experience {
+  padding: 0;
+  list-style: none;
+}
+
+.tab-experience li {
+  background-color: #262626;
+  border-left: 4px solid #4a90e2;
+  border-radius: 6px;
+  padding: 10px;
+  color: #e1e1e1;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.tab-experience li:hover {
+  transform: translateY(-5px);
+  background-color: #333; /* Darker background on hover */
+}
+
+.tab-experience li strong {
+  color: #4a90e2;
+}
+
+
 .tab-contents {
   display: none; /* Default to hidden */
   padding: 20px;
@@ -271,7 +297,6 @@ nav i{
     transform: translateY(0);
   }
 }
-
 
 /* ----------------services--------------- */
 .services{
