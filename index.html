@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <title>
   </title>
@@ -56,14 +56,48 @@
 
         <div class="skills-section">
           <h2>Skills & Expertise:</h2>
-          <ul class="skills-list">
-            <li>DevOps Tools: AWS, Docker, Jenkins, Kubernetes, Git</li>
-            <li>Programming Languages: Core Java, Ruby on Rails (RoR), C++</li>
-            <li>Web Technologies: HTML, CSS, JavaScript</li>
-            <li>Database: MySQL</li>
-            <li>Testing Tools: Postman</li>
-            <li>Cloud Platforms: Amazon EC2, Azure (familiarity)</li>
-          </ul>
+          <div class="tab-section">
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul class="tab-skills">
+                <li><i class="fa-brands fa-java"></i> Java</li>
+                <li><i class="fa-brands fa-docker"></i> Docker</li>
+                <li><i class="fa-brands fa-jenkins"></i> Jenkins</li>
+                <li><i class="fa-brands fa-aws"></i> AWS</li> <!-- Fixed icon class for AWS -->
+                <li><i class="fa-brands fa-kubernetes"></i> Kubernetes</li>
+                <li><i class="fa-brands fa-terraform"></i> Terraform</li>
+                <li><i class="fa-brands fa-git"></i> Git</li>
+                <li><i class="fa-brands fa-github"></i> GitHub</li>
+                <li><i class="fa-brands fa-postman"></i> Postman</li> <!-- Correct icon class for Postman -->
+                <li><i class="fa-brands fa-linux"></i> Linux</li>
+                <li><i class="fa-brands fa-ansible"></i> Ansible</li>
+                <li><i class="fa-brands fa-database"></i> MySQL</li>
+                <li><i class="fa-brands fa-cplusplus"></i> C/CPP</li>
+                <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                <li><i class="fa-brands fa-html5"></i> HTML</li>
+                <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul class="tab-experience">
+                <li>Software Developer at Coders Brain</li>
+                <li>7+ months Experience</li>
+              </ul>
+            </div>
+          </div>
+            <div class="tab-contents" id="education">
+              <ul class="tab-education">
+                <li>2022: Master In Computer Application</li>
+                <li>2020: BCA</li>
+                <li>2016: Higher Secondary Education from CBSE</li>
+                <li>2014: Secondary Education CBSE</li>
+              </ul>
+            </div>
         </div>
 
         <div class="goals-section">
@@ -88,53 +122,11 @@
           <h2>Let’s Connect:</h2>
           <p>I am actively seeking roles where I can contribute and grow within the DevOps and software development fields.</p>
         </div>
-
-        <div class="tab-section">
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          </div>
-
-          <div class="tab-contents active-tab" id="skills">
-            <ul class="tab-skills">
-              <li>Java</li>
-              <li>Docker</li>
-              <li>Jenkins</li>
-              <li>Kubernetes</li>
-              <li>Terraform</li>
-              <li>Linux</li>
-              <li>Git</li>
-              <li>GitHub</li>
-              <li>Ansible</li>
-              <li>MySQL</li>
-              <li>C/CPP</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="education">
-            <ul class="tab-education">
-              <li>2022: Master In Computer Application</li>
-              <li>2020: BCA</li>
-              <li>2016: Higher Secondary Education from CBSE</li>
-              <li>2014: Secondary Education CBSE</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="experience">
-            <ul class="tab-experience">
-              <li>Software Developer at Coders Brain</li>
-              <li>7+ months Experience</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 </section>
+
 
   <!-- Services -->
 
