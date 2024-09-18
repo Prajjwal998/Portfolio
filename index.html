@@ -12,16 +12,15 @@
   <script src="https://kit.fontawesome.com/59967f5f13.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="header">
+   <div id="header">
     <div id="container">
       <nav>
-        <img src="images/logo.jpg" class="logo" alt="">
+        <img src="images/logo.jpg" class="logo" alt="Logo">
         <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <!-- <li><a href="#services">Services</a></li> -->
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#header"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#project"><i class="fas fa-briefcase"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -299,6 +298,15 @@
 </div>
 
 
+<script>
+    function openmenu() {
+      document.getElementById('sidemenu').classList.add('active');
+    }
+
+    function closemenu() {
+      document.getElementById('sidemenu').classList.remove('active');
+    }
+  </script>
 
   <script>
 
