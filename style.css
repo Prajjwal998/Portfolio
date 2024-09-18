@@ -274,191 +274,125 @@ nav ul li a:hover::after {
 
 
 
-/* -------------------about----------------- */
+/* About Section Styling */
 #about {
-  padding: 80px 0;
-  color: #ababab;
-  background-color: #121212; /* Dark background for better contrast */
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px; /* Add space between columns */
-}
-
-.about-col-1 {
-  flex-basis: 35%;
-  max-width: 35%; /* Ensures consistency in layout */
-}
-
-.about-col-1 img {
-  width: 100%;
-  border-radius: 15px;
-  transition: transform 0.3s; /* Smooth scaling on hover */
-}
-
-.about-col-1 img:hover {
-  transform: scale(1.05); /* Slightly zoom the image on hover */
-}
-
-.about-col-2 {
-  flex-basis: 60%;
-  max-width: 60%; /* Ensures consistency in layout */
+  background-color: #0e0e0e;
+  padding: 100px 0;
+  color: #fff;
 }
 
 .sub-title {
-  font-size: 60px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px; /* Add space below the subtitle */
+  font-size: 48px;
+  text-align: center;
+  font-weight: 800;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
-.highlight {
-  color: #4a90e2; /* Highlight color */
+.highlight-text {
+  font-size: 36px;
+  text-align: center;
+  color: #00adb5;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-.summary, .skills-section, .goals-section, .career-goals, .education-section, .connect-section {
-  margin-bottom: 40px; /* Space between sections */
-}
-
-.skills-list, .education-list {
-  padding: 0;
-  list-style: none;
-}
-
-.skills-list li, .education-list li {
-  background-color: #262626;
-  border-left: 4px solid #4a90e2;
-  border-radius: 6px;
-  padding: 10px;
-  color: #e1e1e1;
-  font-size: 16px;
-  margin-bottom: 10px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.skills-list li:hover, .education-list li:hover {
-  transform: translateY(-5px);
-  background-color: #333; /* Darker background on hover */
-}
-
-.tab-titles {
-  display: flex;
-  margin: 20px 0;
-  justify-content: center;
-  gap: 30px;
-  border-bottom: 2px solid #333; /* Darker border for contrast */
-  padding-bottom: 10px;
-}
-
-.tab-links {
+.intro-text {
   font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  cursor: pointer;
-  position: relative;
-  border-radius: 8px;
-  transition: color 0.4s, background-color 0.4s, transform 0.3s;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  color: #d3d3d3;
 }
 
-.tab-links:hover {
-  color: #379ece;
-  background-color: #333; /* Slight background change on hover */
-  transform: scale(1.05); /* Slightly enlarge the tab on hover */
-}
-
-.tab-links::after {
-  content: '';
-  width: 0;
-  height: 4px;
-  background: #379ece;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: width 0.4s;
-}
-
-.tab-links.active-link {
-  background-color: #1f1f1f;
-}
-
-.tab-links.active-link::after {
-  width: 100%;
-}
-
-.tab-experience {
-  padding: 0;
-  list-style: none;
-}
-
-.tab-experience li {
-  background-color: #262626;
-  border-left: 4px solid #4a90e2;
-  border-radius: 6px;
-  padding: 10px;
-  color: #e1e1e1;
-  font-size: 16px;
-  margin-bottom: 10px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.tab-experience li:hover {
-  transform: translateY(-5px);
-  background-color: #333; /* Darker background on hover */
-}
-
-.tab-experience li strong {
-  color: #4a90e2;
-}
-
-
-.tab-contents {
-  display: none; /* Default to hidden */
-  padding: 20px;
-  background-color: #1c1c1c;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.tab-contents.active-tab {
-  display: block;
-  animation: fadeIn 0.6s ease;
-}
-
-.tab-skills {
+.cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible columns */
-  gap: 20px; /* Space between items */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.card {
+  background-color: #1b1b1b;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s, box-shadow 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: #00adb5;
+  border-radius: 50%;
+  opacity: 0.2;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.card:hover::before {
+  transform: scale(1.5);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #00adb5;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d3d3d3;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
+  gap: 20px;
+  justify-content: space-between;
 }
 
-.tab-skills li {
-  display: flex;
-  align-items: center;
-  background-color: #262626;
-  border-left: 4px solid #4a90e2;
-  border-radius: 6px;
-  padding: 10px;
-  transition: transform 0.3s, background-color 0.3s;
+.skills-list li {
   color: #e1e1e1;
   font-size: 16px;
+  margin-right: 20px;
+  position: relative;
 }
 
-.tab-skills li i {
-  font-size: 24px;
-  margin-right: 10px;
+.skills-list li:not(:last-child)::after {
+  content: "<>"; /* Adds <> after each skill */
   color: #4a90e2;
+  margin-left: 10px; /* Space between the skill and the bar */
 }
 
-.tab-skills li:hover {
+.skills-list li i {
+  margin-right: 5px;
+}
+
+.skills-list li:hover {
   transform: translateY(-5px);
   background-color: #333; /* Darker background on hover */
 }
+
 
 @keyframes fadeIn {
   from {
