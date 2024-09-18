@@ -20,7 +20,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url('images/back.png');
+  background-image: url('');/* home background image */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -154,6 +154,124 @@ nav ul li a:hover::after {
     font-size: 20px;
   }
 }
+
+
+/* Home  */
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-text {
+  display: block;
+
+  text-align: center;
+  align-items: center;
+
+  color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animated Fade-in Effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Subtitle Styling */
+.hero-role {
+  font-size: 22px;
+  letter-spacing: 3px;
+  color: #379ece;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Main Title */
+.hero-title {
+  font-size: 64px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.name-highlight {
+  color: #00f7ff;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on name */
+.name-highlight:hover {
+  color: #379ece;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #379ece;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  background-color: #00f7ff;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Animation */
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 40%);
+  opacity: 0.3;
+  animation: pulse 4s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+
 
 
 /* -------------------about----------------- */
@@ -629,9 +747,7 @@ nav .fa-solid{
 
 
 @media only screen and (max-width: 600px) {
-  /* #header{ */
-    /* background-image: url(images/phone-background.png); */
-  /* } */
+
   
   .header-text{
     margin-top: 115%;
