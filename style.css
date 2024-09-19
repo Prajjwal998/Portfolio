@@ -592,21 +592,30 @@ nav ul li a:hover::after {
   transform: scale(1.1);
 }
 
+/* button styles */
 .btn.btn2 {
   display: inline-block;
   background-color: #4a90e2;
   color: #fff;
   padding: 12px 30px;
-  border-radius: 6px;
+  border-radius: 26px;
   text-decoration: none;
   font-size: 16px;
-  margin-top: 20px;
-  transition: background-color 0.3s;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s ease;
 }
 
 .btn.btn2:hover {
   background-color: #357abd;
 }
+
+/* Click effect */
+.btn.btn2:active {
+  background-color: #2a5a8e; /* Slightly darker background when clicked */
+  transform: scale(0.95);    /* Scale down the button to simulate a press */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Optional shadow effect on click */
+}
+
 
 .contact-form {
   background-color: #333;
