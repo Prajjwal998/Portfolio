@@ -51,6 +51,26 @@ nav .logo {
   margin-right: 20px; /* Add some space to the right of the logo */
 }
 
+.logo-text {
+  font-size: 28px; /* Adjust the size as needed */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-color {
+  color: #4a90e2; /* Color for 'P' */
+  font-family: 'Poppins', sans-serif; /* Font style if desired */
+}
+
+.logo-white {
+  color: #ffffff; /* White color for 'rajjwal' */
+  font-weight: bold; /* Bold styling for 'rajjwal' */
+  margin-left: 2px; /* Small space between 'P' and 'rajjwal' */
+  font-family: 'Poppins', sans-serif; /* Same font style for consistency */
+}
+
 nav ul {
   list-style: none;
   display: flex;
